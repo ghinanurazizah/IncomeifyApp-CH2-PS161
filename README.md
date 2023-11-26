@@ -1,2 +1,6 @@
-# IncomeifyApp-CH2-PS161
-This repository contains the code and documentation for the Capstone Project of team CH2-PS161 in Bangkit Academy 2023. 
+# IncomeifyApp-CH2-PS161 (Machine Learning)
+This branch contains the following contents from the Machine Learning team:
+- Data Preprocessing
+- Build a model
+- Train Dataset
+- Testing a model
