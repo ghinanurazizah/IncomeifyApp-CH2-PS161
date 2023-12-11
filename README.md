@@ -88,6 +88,6 @@ This repository contains the Node.js backend for the Incomeify project. The back
       "email": "johndoe@hotmail.com",
       "createdAt": "2023-12-11T15:18:27.120Z"
     },
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsImlhdCI6MTcwMjMwNzk0NywiZXhwIjoxNzAyOTEyNzQ3fQ.Fom8lFfgCxOC7TGXuzih109FZuTkoT_mb4kJ_65-hao"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
   }
   ```
