@@ -11,7 +11,7 @@ This repository contains the Node.js backend for the Incomeify project. The back
 | /api/user            | POST        | Get user data                                 | Yes             |
 
 ### Authentication & Authorization (Register, Login)
-### POST `/auth/register` - Sign up a new user
+#### POST `/auth/register` - Sign up a new user
 ##### Request
 - **Method:** **POST**
 - **Path:** **`/auth/register`**
