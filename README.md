@@ -25,8 +25,8 @@ This repository contains the Node.js backend for the Incomeify project. The back
   ```
 ##### Response
 - **Status:** **201 Created**
-```json
-{
+  ```json
+  {
     "success": true,
     "message": "User registered successfully",
     "data": {
@@ -35,6 +35,13 @@ This repository contains the Node.js backend for the Incomeify project. The back
         "email": "johndoe@hotmail.com",
         "createdAt": "2023-12-11T14:39:52.218Z"
     }
-}
-```
+  }
+  ```
+- **Status:** **400 Bad Request**
+  ```json
+  {
+    "success": false,
+    "message": "Email is already registered"
+  }
+  ```
 
