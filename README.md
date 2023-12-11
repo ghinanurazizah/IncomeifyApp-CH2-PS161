@@ -5,6 +5,7 @@ This repository contains the Node.js backend for the Incomeify project. The back
 ## API Endpoints Documentation
 
 ### Summary
+Base URL: https://node-api-ikm4vmuapa-as.a.run.app
 
 | Route          | HTTP Method | Description        | Token Required? |
 | -------------- | ----------- | ------------------ | --------------- |
@@ -98,3 +99,10 @@ This repository contains the Node.js backend for the Incomeify project. The back
     "message": "Invalid Credentials"
   }
   ```
+
+---
+
+#### GET `/api/user` - Get user data
+
+##### Request
+- **Method:** **GET**
