@@ -91,3 +91,10 @@ This repository contains the Node.js backend for the Incomeify project. The back
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
   }
   ```
+- **Status:** **401 Unauthorized**
+  ```json
+  {
+    "success": false,
+    "message": "Invalid Credentials"
+  }
+  ```
