@@ -44,4 +44,10 @@ This repository contains the Node.js backend for the Incomeify project. The back
     "message": "Email is already registered"
   }
   ```
-
+- **Status:** **400 Bad Request**
+  ```json
+  {
+    "success": false,
+    "message": "Password must be at least 8 characters long."
+  }
+  ```

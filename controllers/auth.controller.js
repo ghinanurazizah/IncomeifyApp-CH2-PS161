@@ -75,7 +75,14 @@ const userRegister = async (req, res) => {
         message: 'Email is already registered',
       });
     }
-    
+
+    if (password.length < 8) {
+      return res.status(400).json({
+        success: false,
+        message: 'Password must be at least 8 characters long.',
+      });
+    }
+
     // Hash the password before storing it in the database
     const hashedPassword = await bcrypt.hash(password, 10);
 
