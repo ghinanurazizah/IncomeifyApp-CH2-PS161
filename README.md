@@ -15,14 +15,26 @@ This repository contains the Node.js backend for the Incomeify project. The back
 ##### Request
 - **Method:** **POST**
 - **Path:** **`/auth/register`**
-- **Body:
+- **Body:**
 ```json
 {
     "name": "John Doe",
     "email": "johndoe@hotmail.com",
     "password": "123"
 }
-
+```
 ##### Response
-
+- **Status:** **201 Created**
+```json
+{
+    "success": true,
+    "message": "User registered successfully",
+    "data": {
+        "id": 3,
+        "name": "John Doe",
+        "email": "johndoe@hotmail.com",
+        "createdAt": "2023-12-11T14:39:52.218Z"
+    }
+}
+```
 
