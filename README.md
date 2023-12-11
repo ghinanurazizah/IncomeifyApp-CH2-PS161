@@ -11,7 +11,7 @@ Base URL: https://node-api-ikm4vmuapa-as.a.run.app
 | -------------- | ----------- | ------------------ | --------------- |
 | /auth/register | POST        | Sign up a new user | -               |
 | /auth/login    | POST        | Login user         | -               |
-| /api/user      | POST        | Get user data      | Yes             |
+| /api/user      | GET         | Get user data      | Yes             |
 
 ### Authentication & Authorization (Register, Login)
 
