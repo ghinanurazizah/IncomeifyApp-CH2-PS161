@@ -5,6 +5,7 @@ This repository contains the Node.js backend for the Incomeify project. The back
 ## API Endpoints Documentation
 
 ### Summary
+
 Base URL: https://node-api-ikm4vmuapa-as.a.run.app
 
 | Route          | HTTP Method | Description        | Token Required? |
@@ -105,4 +106,29 @@ Base URL: https://node-api-ikm4vmuapa-as.a.run.app
 #### GET `/api/user` - Get user data
 
 ##### Request
+
 - **Method:** **GET**
+- **Path:** **`/api/user`**
+
+Put the token in the Header with `Authorization` key and `Bearer <token>` value.
+
+```json
+{
+  "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+}
+```
+
+##### Response
+
+- **Status:** **200 OK**
+  ```json
+  {
+    "success": true,
+    "data": {
+      "id": 5,
+      "name": "John Doe",
+      "email": "johndoe@hotmail.com",
+      "createdAt": "2023-12-11T15:18:27.120Z"
+    }
+  }
+  ```
