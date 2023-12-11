@@ -51,3 +51,8 @@ This repository contains the Node.js backend for the Incomeify project. The back
     "message": "Password must be at least 8 characters long."
   }
   ```
+
+---
+
+#### POST `/auth/login` - Login user
+##### Request
