@@ -28,7 +28,7 @@ Go to the project directory
 cd IncomeifyApp-CH2-PS161
 ```
 
-Go to the branch CC
+Go to the CC branch
 ```
 git checkout CC
 ```
