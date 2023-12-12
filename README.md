@@ -4,8 +4,8 @@ This repository contains the Node.js backend for the Incomeify project. The back
 
 ## Environment Variables
 To run this project, you will need to add the following environment to your `.env` file
-```diff
-${\color{red}Some \space text \space here}$
+```
+<span style='color: orange;'>DATABASE_URL</span>
 ```
 
 ## API Endpoints Documentation
