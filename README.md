@@ -3,7 +3,9 @@
 This repository contains the Node.js backend for the Incomeify project. The backend allow users to perform GET and POST operations, consumed by our application Incomeify Mobile Application. It is built using Node.js and the Express framework. The deployment involves using Google Cloud Platform services, specifically Cloud Run for the API deployment and Compute Engine for the MySQL server.
 
 ## Environment Variables
+
 To run this project, you will need to add the following environment to your `.env` file
+
 ```
 DATABASE_URL=your_database_url
 SECRET_KEY=your_secret_key
@@ -11,6 +13,44 @@ GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
 GOOGLE_CALLBACK_URL=your_google_callback_url
 ```
+
+## Run Locally
+
+Clone the project
+
+```
+git clone https://github.com/ghinanurazizah/IncomeifyApp-CH2-PS161.git
+```
+
+Go to the project directory
+
+```
+cd IncomeifyApp-CH2-PS161
+```
+
+Go to the branch CC
+```
+git checkout CC
+```
+
+Install dependencies
+
+```
+npm install
+```
+
+Start the server on development
+
+```
+npm run start-dev
+```
+
+Start the server on production
+
+```
+npm run start
+```
+
 ## API Endpoints Documentation
 
 ### Summary
