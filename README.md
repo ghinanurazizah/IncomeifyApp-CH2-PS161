@@ -4,7 +4,13 @@ This repository contains the Node.js backend for the Incomeify project. The back
 
 ## Environment Variables
 To run this project, you will need to add the following environment to your `.env` file
-A very <span style='color: red;'>long</span> sentence.
+```
+DATABASE_URL=your_database_url
+SECRET_KEY=your_secret_key
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+GOOGLE_CALLBACK_URL=your_google_callback_url
+```
 ## API Endpoints Documentation
 
 ### Summary
