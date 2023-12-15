@@ -29,6 +29,7 @@ cd IncomeifyApp-CH2-PS161
 ```
 
 Go to the CC branch
+
 ```
 git checkout CC
 ```
@@ -57,13 +58,13 @@ npm run start
 
 Base URL: https://node-api-ikm4vmuapa-as.a.run.app
 
-| Route          | HTTP Method | Description        | Token Required? |
-| -------------- | ----------- | ------------------ | --------------- |
-| /auth/register | POST        | Sign up a new user | -               |
-| /auth/login    | POST        | Login user         | -               |
-| /auth/google   | GET         | Initiate Google Oauth2 login | - |
-| /auth/google/callback  | GET | Google Oauth2 callback       | - |
-| /api/user      | GET         | Get user data      | Yes             |
+| Route                 | HTTP Method | Description                  | Token Required? |
+| --------------------- | ----------- | ---------------------------- | --------------- |
+| /auth/register        | POST        | Sign up a new user           | -               |
+| /auth/login           | POST        | Login user                   | -               |
+| /auth/google          | GET         | Initiate Google Oauth2 login | -               |
+| /auth/google/callback | GET         | Google Oauth2 callback       | -               |
+| /api/user             | GET         | Get user data                | Yes             |
 
 ### Authentication & Authorization (Register, Login)
 
@@ -153,6 +154,7 @@ Base URL: https://node-api-ikm4vmuapa-as.a.run.app
   ```
 
 #### GET `/auth/google` - Initiate Google Oauth2 login
+
 - **Method:** **GET**
 - **PATH** **`/auth/google`**
 - **Description:** Initiate Google Oauth2 login.
@@ -160,9 +162,12 @@ Base URL: https://node-api-ikm4vmuapa-as.a.run.app
 ---
 
 #### GET `/auth/google/callback` - Google Oauth2 callback
+
 - **Method:** **GET**
 - **Path:** **`/auth/google/callback`**
 - **Description:** Callback endpoint for Google Oauth2. Handle authentication and redirect.
+
+---
 
 #### GET `/api/user` - Get user data
 
