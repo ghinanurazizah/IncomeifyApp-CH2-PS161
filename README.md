@@ -9,4 +9,7 @@ Incomeify is an application capable of predicting individual salaries based on a
 # App Documentations
 ![Untitled design](https://github.com/ghinanurazizah/IncomeifyApp-CH2-PS161/assets/98375040/6a765484-12d0-43c2-91dc-c45a3fc3adfc)
 
+For full documentations, please take a look at each branches.
+
+
 
