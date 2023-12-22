@@ -1,15 +1,24 @@
-# IncomeifyApp/CH2-PS161
+# IncomeifyApp
 ![Incomeify](https://github.com/ghinanurazizah/IncomeifyApp-CH2-PS161/assets/98375040/cafa24d0-71b0-4d51-b5db-4051b45e51d6)
 
-Incomeify is an application capable of predicting individual salaries based on a range of relevant factors and historical salary data.
-------
+## Description
+We created an application that can predict a person's salary from several parameters. The main purpose of developing an app that focuses on salary prediction is because in this day and age, questions around salary expectations are often part of the hiring process. And clarity on salary estimation is key in making career decisions. Therefore, we identified the need for a solution that can help job seekers to make realistic and strategic estimates of their expected salary.
 
-![Screenshot (19)](https://github.com/ghinanurazizah/IncomeifyApp-CH2-PS161/assets/98375040/cc1bf641-b059-4b1f-b775-2dcff9b38868)
+## Team
+**Team ID** : CH2-PS161
+| Name | Bangkit ID | Role |
+| ---------|:--------:|:--------:|
+| Aghisna Baihaqi   | M256BSX0397     | Machine Learning  |
+| Ghina Nur Azizah  | M237BSX0721   | Machine Learning    |
+| Salsabila Ramadhan  | M237BSX0780     | Machine Learning    |
+| Kristo Josua Simangunsong   | C295BSY3935     | Cloud Computing    |
+| Salma Aulia Nazhira  | C256BSX3559  | Cloud Computing    |
+| Muchammad Syamsu Huda  | A296BSY2565     | Mobile Development    |
+| Rama Danudinata  | A295BSY2666     | Mobile Development    |
 
-# App Documentations
+## Previews
 ![Untitled design](https://github.com/ghinanurazizah/IncomeifyApp-CH2-PS161/assets/98375040/6a765484-12d0-43c2-91dc-c45a3fc3adfc)
 
-For full documentations, please take a look at each branches.
 
 
 
