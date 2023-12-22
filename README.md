@@ -16,6 +16,11 @@ We created an application that can predict a person's salary from several parame
 | Muchammad Syamsu Huda  | A296BSY2565     | Mobile Development    |
 | Rama Danudinata  | A295BSY2666     | Mobile Development    |
 
+## Repositories
+- [Machine Learning](https://github.com/ghinanurazizah/IncomeifyApp-CH2-PS161/tree/ML)
+- [CC Flask](https://github.com/ghinanurazizah/IncomeifyApp-CH2-PS161/tree/CC-Flask) , [CC Node](https://github.com/ghinanurazizah/IncomeifyApp-CH2-PS161/tree/CC-Node)
+- [Mobile Development](https://github.com/ghinanurazizah/IncomeifyApp-CH2-PS161/tree/MD)
+
 ## Previews
 ![Untitled design](https://github.com/ghinanurazizah/IncomeifyApp-CH2-PS161/assets/98375040/6a765484-12d0-43c2-91dc-c45a3fc3adfc)
 
