@@ -7,7 +7,7 @@ Here is the [link](https://www.figma.com/file/j3gNiqCV7bMqzU4eOGYiJw/Prototype-I
 
 ## Code Implementation
 
-The Incomeify app was created using Kotlin as its native programming language, aiming to provide insights into identify income or salary through given information from user input. The application adopts the MVVM architecture along with the Repository pattern, leveraging LiveData to seamlessly transmit data from the data source to the user interface. Additionally, Material Design is used for Design System.
+The Incomeify app was created using Kotlin as its native programming language, aiming to provide insights into identifying income or salary through given information from user input. The application adopts the MVVM architecture along with the Repository pattern, leveraging LiveData to seamlessly transmit data from the data source to the user interface. Additionally, Material Design is used for the Design System.
 
 ## Libraries
 
@@ -24,4 +24,7 @@ Here are some libraries that we use on this project.
   
 ## Download
 
-Here is the [link](https://bit.ly/DownloadIncomifyApp) of Incomeify App.
+Here is the [link](https://bit.ly/DownloadIncomifyApp) of the Incomeify App.
+
+## Preview 
+![Preview for Incomeify App](<Frame 2-1.png>)
