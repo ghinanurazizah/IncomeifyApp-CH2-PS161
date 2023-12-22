@@ -27,4 +27,5 @@ Here are some libraries that we use on this project.
 Here is the [link](https://bit.ly/DownloadIncomifyApp) of the Incomeify App.
 
 ## Preview 
-![Preview for Incomeify App](<Frame 2-1.png>)
+![Preview for Incomeify App](https://github.com/ghinanurazizah/IncomeifyApp-CH2-PS161/assets/89115897/f095d500-291c-4cef-9348-aacbe5b3a135)
+
