@@ -55,11 +55,11 @@ npm run start
 
 Base URL: https://node-api-ikm4vmuapa-as.a.run.app
 
-| Route                 | HTTP Method | Description                  | Token Required? |
-| --------------------- | ----------- | ---------------------------- | --------------- |
-| /auth/register        | POST        | Sign up a new user           | -               |
-| /auth/login           | POST        | Login user                   | -               |
-| /api/user             | GET         | Get user data                | Yes             |
+| Route          | HTTP Method | Description        | Token Required? |
+| -------------- | ----------- | ------------------ | --------------- |
+| /auth/register | POST        | Sign up a new user | -               |
+| /auth/login    | POST        | Login user         | -               |
+| /api/user      | GET         | Get user data      | Yes             |
 
 ### Authentication & Authorization (Register, Login)
 
@@ -147,20 +147,6 @@ Base URL: https://node-api-ikm4vmuapa-as.a.run.app
     "message": "Invalid Credentials"
   }
   ```
-
-#### GET `/auth/google` - Initiate Google Oauth2 login
-
-- **Method:** **GET**
-- **PATH** **`/auth/google`**
-- **Description:** Initiate Google Oauth2 login.
-
----
-
-#### GET `/auth/google/callback` - Google Oauth2 callback
-
-- **Method:** **GET**
-- **Path:** **`/auth/google/callback`**
-- **Description:** Callback endpoint for Google Oauth2. Handle authentication and redirect.
 
 ---
 
