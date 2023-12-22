@@ -74,7 +74,7 @@ education_level_mapping = {
 employment_type_mapping = {
  'Fulltime': 2,
  'Contract': 0,
- 'Part Time': 1,
+ 'Part time': 1,
  'Temporary': 3
 }
 
