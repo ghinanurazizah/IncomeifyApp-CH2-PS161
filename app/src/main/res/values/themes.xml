@@ -1,0 +1,145 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.IncomeifyApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">@color/teal_deer</item>
+    </style>
+
+    <style name="Theme.IncomeifyApp" parent="Base.Theme.IncomeifyApp" />
+
+    <!-- TEXT STYLE -->
+    <style name="Text">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Text.Bold" parent="Text">
+        <item name="android:textColor">@color/may_green</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="Text.Medium" parent="Text">
+        <item name="android:textColor">@color/may_green</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Text.Regular" parent="Text">
+        <item name="android:textColor">@color/may_green</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Text.Small" parent="Text">
+        <item name="android:textColor">@color/may_green</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Text.Title" parent="Text">
+        <item name="android:textColor">@color/la_salle_green</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <!-- Button -->
+    <style name="RegularButton" parent="Widget.Material3.Button">
+        <item name="cornerRadius">20dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">360dp</item>
+        <item name="backgroundTint">@color/may_green</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="CustomIconButton" parent="Widget.Material3.Button.Icon">
+        <item name="cornerRadius">10dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="backgroundTint">@color/tea_green</item>
+        <item name="iconSize">24dp</item>
+        <item name="iconTint">@color/may_green</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/may_green</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="CustomInactiveButton" parent="Widget.Material3.Button">
+        <item name="cornerRadius">10dp</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="backgroundTint">@color/may_green</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <!-- Card view-->
+    <style name="CustomCardView" parent="Widget.Material3.CardView.Outlined">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:backgroundTint">@color/tea_green</item>
+        <item name="cardCornerRadius">10dp</item>
+        <item name="strokeColor">@color/la_salle_green</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+    </style>
+
+    <!-- Text Field -->
+    <style name="CustomDropdown" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxStrokeColor">@color/la_salle_green</item>
+        <item name="endIconTint">@color/la_salle_green</item>
+    </style>
+
+    <style name="CustomClearTextField" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxStrokeColor">@color/la_salle_green</item>
+        <item name="endIconTint">@color/la_salle_green</item>
+        <item name="endIconMode">clear_text</item>
+    </style>
+
+    <style name="CustomTextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeWidth">3.5dp</item> <!-- Increase stroke width -->
+        <item name="boxStrokeWidthFocused">3.5dp</item> <!-- Increase stroke width when focused -->
+        <item name="boxStrokeColor">@color/dark_moss_green</item>
+    </style>
+    
+    <!-- Indicator -->
+    <style name="CustomActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/tea_green</item>
+    </style>
+
+    <!-- Dialog -->
+    <style name="CustomAlertDialogTheme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorOnPrimary">@color/dark_moss_green</item>
+        <item name="colorSurface">@color/green_silver</item>
+        <item name="android:textAppearance">@style/Text.Medium</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="android:titleTextAppearance">@style/Text.Bold</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/red</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/dark_moss_green</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+
+
+
+</resources>
