@@ -1,62 +1,9 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const { PrismaClient } = require('@prisma/client');
-const passport = require('passport');
-const GoogleStrategy = require('passport-google-oauth2').Strategy;
 require('dotenv').config();
 
 const prisma = new PrismaClient();
-
-passport.use(
-  new GoogleStrategy(
-    {
-      clientID: process.env.GOOGLE_CLIENT_ID,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL: process.env.GOOGLE_CALLBACK_URL,
-    },
-    async (accessToken, refreshToken, profile, done) => {
-      try {
-        let user = await prisma.user.findUnique({
-          where: {
-            email: profile.emails[0].value,
-          },
-        });
-
-        if (!user) {
-          user = await prisma.user.create({
-            data: {
-              name: profile.displayName,
-              email: profile.emails[0].value,
-              password: '-', // Default password for OAuth users
-            },
-          });
-        }
-
-        return done(null, user);
-      } catch (error) {
-        return done(error);
-      }
-    }
-  )
-);
-
-passport.serializeUser((user, done) => {
-  done(null, user.id);
-});
-
-passport.deserializeUser(async (id, done) => {
-  try {
-    const user = await prisma.user.findUnique({
-      where: {
-        id: id,
-      },
-    });
-
-    done(null, user);
-  } catch (error) {
-    done(error);
-  }
-});
 
 const userRegister = async (req, res) => {
   try {
@@ -174,46 +121,4 @@ const userLogin = async (req, res) => {
   }
 };
 
-const googleAuth = (req, res, next) => {
-  passport.authenticate('google', { scope: ['profile', 'email'] })(
-    req,
-    res,
-    next
-  );
-};
-
-const googleAuthCallback = (req, res, next) => {
-  passport.authenticate(
-    'google',
-    { failureRedirect: '/' },
-    async (err, user) => {
-      if (err || !user) {
-        return res.status(401).json({
-          success: false,
-          message: 'Google OAuth authentication failed',
-        });
-      }
-
-      // Generate the JWT token for OAuth authentication
-      const secretKey = process.env.SECRET_KEY;
-      const token = jwt.sign({ userId: user.id }, secretKey, {
-        expiresIn: '7d',
-      });
-
-      // Create a session entry
-      await prisma.session.create({
-        data: {
-          userId: user.id,
-          token: token,
-        },
-      });
-
-      // Attach the token to the request object
-      req.oauthToken = token;
-
-      next();
-    }
-  )(req, res, next);
-};
-
-module.exports = { userRegister, userLogin, googleAuth, googleAuthCallback };
+module.exports = { userRegister, userLogin };

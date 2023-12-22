@@ -9,9 +9,6 @@ To run this project, you will need to add the following environment to your `.en
 ```
 DATABASE_URL=your_database_url
 SECRET_KEY=your_secret_key
-GOOGLE_CLIENT_ID=your_google_client_id
-GOOGLE_CLIENT_SECRET=your_google_client_secret
-GOOGLE_CALLBACK_URL=your_google_callback_url
 ```
 
 ## Run Locally
@@ -62,8 +59,6 @@ Base URL: https://node-api-ikm4vmuapa-as.a.run.app
 | --------------------- | ----------- | ---------------------------- | --------------- |
 | /auth/register        | POST        | Sign up a new user           | -               |
 | /auth/login           | POST        | Login user                   | -               |
-| /auth/google          | GET         | Initiate Google Oauth2 login | -               |
-| /auth/google/callback | GET         | Google Oauth2 callback       | -               |
 | /api/user             | GET         | Get user data                | Yes             |
 
 ### Authentication & Authorization (Register, Login)
